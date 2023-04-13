@@ -1,4 +1,7 @@
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class Student extends People implements Serializable {
     private String studentCode;
@@ -100,10 +103,6 @@ public class Student extends People implements Serializable {
                 ", mediumScore=" + mediumScore +
                 ""+getAcademicAbility()+
                 '}';
-    }
-
-    public void informationStudent(){
-        System.out.printf("%-5d %-20s %-15s %-15s \n",getId(),getName(),getBirthday(),getAddress(),getHeight(),getWeight(),studentCode,school,schoolYear,mediumScore );
     }
 
 }
